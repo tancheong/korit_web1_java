@@ -18,7 +18,7 @@ public class If {
             System.out.println("탑승 가능!");
         }
 
-        // if ~ else if ~ else
+        // if ~ else if ~ else문
         // 하나의 조건이 만족되면, 나머지는 검사를 하지 않는다.
         // 단 하나의 블록만 실행!
 
@@ -44,7 +44,8 @@ public class If {
 
         if (!isLogin) { // 로그인 안되었을 때 실행
             System.out.println("로그인이 필요합니다.");
-        } else if (isBanned) { // 로그인 되었다고 가정하고 실행해야 함
+        } else if (isBanned) { // !isLogin -> false -> isLogin: true
+            // 로그인 되었다고 가정하고 실행해야 함
             System.out.println("정지된 계정입니다.");
         }
 
@@ -56,5 +57,8 @@ public class If {
         boolean isVIP = false;
         boolean isGOLD = true;
         boolean isSILVER = false;
+
+        // github.com/elikese
+
     }
 }
